@@ -1,0 +1,112 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@1,200&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    outline: none;
+
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+body{
+    display: grid;
+    height: 100vh;
+    place-items: center;
+    text-align: center;
+    background: linear-gradient(to left,#A9F1DF,#FFBBBB);
+}
+.wrpper{
+    background: rgba(255,255,255,0.15);
+    box-shadow: 10px 10px 20px rgba(0,0,0,.4);
+    padding: 20px 30px;
+    border-radius: 10px;
+}
+.wrpper .text{
+    font-size: 35px;
+    font-weight: 600;
+}
+.wrpper p{
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 20px;
+}
+.wrpper .buttons{
+    display: flex;
+    margin: 30px 0 20px 0;
+}
+.buttons a{
+    position: relative;
+    margin: 0 20px;
+    height: 60px;
+    width: 200px;line-height: 60px;
+    display: block;
+    border-radius: 30px;
+    color: #fff;
+    font-weight: 500;
+    text-decoration: none;
+    text-transform: uppercase;
+    overflow: hidden;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+    letter-spacing: 1px;
+}
+.buttons a:first-child{
+    background: linear-gradient(to top,#D74177,#FFE98A);
+}
+.buttons a:nth-child(2){
+    background: linear-gradient(to top,#00B7FF,#FFFFC7);
+}
+.buttons a:last-child{
+    background:linear-gradient(to top,#38ADAE,#CD295A) ;
+}
+.buttons a>span{
+    position: absolute;
+    background: #fff;
+    transform: translate(-50%,-50%);
+    border-radius: 50%;
+    pointer-events: none;
+    animation: ripple 0.6s linear infinite;
+
+}
+footer{
+    position: absolute;
+    bottom: 0;
+    width: 100vh;
+    font-weight: 400;
+    background-color: rgba(255,255,255,0.341);
+    color: #000;
+}
+@keyframes ripple{
+    0%{
+        width:0px ;
+        height:0px ;
+        opacity: 0.5;
+    }
+    100%{
+        width:500px ;
+        height:500px ;
+        opacity: 0;
+    }
+}
+@media (max-width: 600px) {
+    /* body {
+        background: #f00;
+        color: #fff;
+    } */}
+
+    /* Media For Desktop */
+
+@media (min-width: 1201px) {
+    /* body {
+        background: #000;
+        color: #fff;
+    } */
+}
+
+/* Media For Ipad */
+@media (min-width: 601px) and (max-width: 1200px) {
+    /* body {
+        background: #00f;
+        color: #fff;
+    } */}
+    
